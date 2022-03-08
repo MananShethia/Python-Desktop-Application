@@ -2,11 +2,11 @@ from cProfile import label
 from cgi import test
 from tkinter import *
 import tkinter.messagebox as msg
-import mysql.connector
+import mysql.connector as sqlConn
 
 
 def createConnection():
-    return mysql.connector.connect(
+    return sqlConn.connect(
         host="localhost",
         user="root",
         password="",
